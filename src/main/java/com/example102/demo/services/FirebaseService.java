@@ -18,7 +18,7 @@ public class FirebaseService {
             data.put("mensaje", "Conexion exitosa con Firestore");
             data.put("estado", "ok");
             // guardar en colección
-            db.collection("test")
+            db.collection("hola")
                     .document("doc1")
                     .set(data);
             return "Datos guardados correctamente";
