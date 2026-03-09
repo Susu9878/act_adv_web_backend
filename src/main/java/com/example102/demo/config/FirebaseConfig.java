@@ -15,7 +15,7 @@ public class FirebaseConfig {
     @Bean
     public FirebaseApp firebaseApp() throws IOException {
         FileInputStream serviceAccount =
-                new FileInputStream("src/main/resources/firebase-config.json");
+                new FileInputStream("src/main/resources/firebase-service-account.json");
 
         @SuppressWarnings("deprecation")
         FirebaseOptions options = new FirebaseOptions.Builder()
